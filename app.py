@@ -132,9 +132,9 @@ elif algorithm_choice == "ACO":
     num_iterations = st.sidebar.slider("Nombre d’itérations", 10, 100, 50)
     best_path = run_aco()
     st.write("ACO best path:", best_path)
-        # Create a graph (example)
+    # Create a graph 
     G = nx.Graph()
-    G.add_edges_from([(0, 1), (1, 2), (2, 0)])  # Example graph edges
+    G.add_edges_from([(0, 1), (1, 2), (2, 0)])  # graph edges
 
     # Get positions using spring layout
     pos = nx.spring_layout(G)
